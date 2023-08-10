@@ -285,7 +285,10 @@ input.form-control {
 .plan-offering{
     color: var(--color-text-sec);
 }
-
+.plan-offering{
+    border: 0;
+    border-radius: unset;
+}
 .plan-offering li:not(:last-child){
     border-bottom: 1px solid var(--color-secondary);
 }
@@ -299,12 +302,12 @@ input.form-control {
     padding: 1rem 0;
 }
 .pricing .card{
-    box-shadow: 5px 10px 10px rgba(0,0,0,.3);
-    transition: all .4s ease-in-out;
+    box-shadow: 3px 5px 5px rgba(0,0,0,.2);
+    transition: all .3s ease-in-out;
 }
 .pricing .card:hover,
 .pricing .card:focus,
 .pricing .card:active{
-    box-shadow: 10px 20px 20px rgba(0,0,0,.5);
-    transform: translateY(-3px) scale(1.0);
+    box-shadow: 2px 10px 10px rgba(0,0,0,.3);
+    transform: translateY(-7px);
 }
