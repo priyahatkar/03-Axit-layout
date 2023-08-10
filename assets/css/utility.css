@@ -31,8 +31,16 @@
     background: var(--color-white);
 }
 
+.border-center.short-border-orange::after{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .tri-heading{
     color: var(--color-text-pri);
     font-weight: 500;
 }
 
+.bg-gray{
+    background-color: var(--color-secondary);
+}

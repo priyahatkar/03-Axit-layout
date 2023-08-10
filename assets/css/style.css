@@ -6,6 +6,9 @@
 .section{
     padding: 7.5rem 0;
 }
+.bg-gray{
+    background-color: var(--color-secondary);
+}
 /* css for header section */
 
 .mainHeader{
@@ -174,9 +177,6 @@ input.form-control {
 }
 
 /* css for  features */
-.features{
-    background-color: var(--color-secondary);
-}
 
 .featureTab .nav{
     flex: 0 0 110px;
@@ -217,12 +217,12 @@ input.form-control {
     transform: translateY(-3px) scale(1.03);
 }
 .cloudIcon {
-    display: flex;
+    display: inline-block;
     height: 2.5rem;
     width: 2.5rem;
-    justify-content: center;
+    text-align: center;
     border: 2px solid var(--color-primary);
-    align-items: center;
+    line-height: 2.4rem;
     border-radius: 50%;
 }
 .cloudIcon i{
@@ -230,8 +230,81 @@ input.form-control {
     color: var(--color-primary);
 }
 
-/* css for features3 */
 
-.features3{
-    background-color: var(--color-secondary);
+
+/* css for awesome */
+
+.awesome .mainHeading{
+    color: var(--color-text-pri);
+}
+.awesome .cloudIcon{
+    height: 4.063rem;
+    width: 4.063rem;
+    line-height: 4.063rem;
+}
+.awesome .cloudIcon i{
+    font-size: 1.563rem;
+}
+
+/* css for pricing */
+
+.pricing .mainHeading{
+    color: var(--color-text-pri);
+}
+.pricing .card{
+    border: 0px;
+}
+.pricing .card-header{
+    background-color: var(--color-bg);
+    color: var(--color-white); 
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.3rem 0;
+    border-bottom: 1px solid var(--color-secondary);
+}
+.pricing .price-detail{
+    background-color: var(--color-bg);
+    color: var(--color-white); 
+    padding: 1.75rem 0 1.5rem;
+    border-bottom: 5px solid var(--color-primary);
+}
+.pricing .plan-price{
+    font-size: 2.25rem;
+}
+.plan-price span{
+    font-size: 5.938rem;
+    display: inline-block;
+    transform: translateX(-10px);
+}
+
+.pricing .time-span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.plan-offering{
+    color: var(--color-text-sec);
+}
+
+.plan-offering li:not(:last-child){
+    border-bottom: 1px solid var(--color-secondary);
+}
+.mostPopular .price-detail{
+    border: 0;
+}
+.popularInfo{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 1rem 0;
+}
+.pricing .card{
+    box-shadow: 5px 10px 10px rgba(0,0,0,.3);
+    transition: all .4s ease-in-out;
+}
+.pricing .card:hover,
+.pricing .card:focus,
+.pricing .card:active{
+    box-shadow: 10px 20px 20px rgba(0,0,0,.5);
+    transform: translateY(-3px) scale(1.0);
 }
