@@ -78,21 +78,6 @@
     color: var(--color-white);
 }
 
-.short-border{
-    position: relative;
-    margin-bottom: 5rem;
-}
-
-.short-border::after{
-    content: "";
-    position: absolute;
-    bottom: -35px;
-    width: 60px;
-    height: 3px;
-    background: var(--color-white);
-    left: 5px;
-}
-
 .headerPara{
     color: var(--color-white);
     font-weight: 300;
@@ -168,7 +153,51 @@ input.form-control {
     padding: 25px 0;
     border-bottom: 2px solid var(--color-border);
 }
+.socialHeading{
+    font-size: 20px;
+    color: var(--color-bg);
+    font-weight: bold;
+}
+.socialPara{
+    color: var(--color-text-sec);
+    font-size: 14px;
+}
 .socialIcon i{
     font-size: 40px;
     color: var(--color-icons);
+    transition: all .2s ease-in-out;
+}
+.socialIcon i:hover,
+.socialIcon i:focus,
+.socialIcon i:active{
+    color: var(--color-primary);
+}
+
+/* css for  features */
+.features{
+    background-color: var(--color-secondary);
+}
+
+.featureTab .nav{
+    flex: 0 0 110px;
+    background-color: var(--color-bg);
+} 
+.featureTab li.nav-item{
+    flex: 0 0 100%;
+}
+.featureTab li.nav-item .nav-link{
+    margin: 0;
+    width: 100%;
+    padding: 50px 0;
+    color: var(--color-white) !important;
+    height: 100%;
+}
+.featureTab li.nav-item .nav-link.active{
+    background-color: var(--color-primary);
+}
+#myTabContent{
+    padding-left: 100px;
+}
+.featureTab .socialHeading{
+    color: var(--color-dark);
 }
