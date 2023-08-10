@@ -201,3 +201,37 @@ input.form-control {
 .featureTab .socialHeading{
     color: var(--color-dark);
 }
+
+
+/* css for  features2 */
+
+
+.featureImg{
+    box-shadow: 5px 10px 10px rgba(0,0,0,.3);
+    transition: all .4s ease-in-out;
+}
+.featureImg:hover,
+.featureImg:focus,
+.featureImg:active{
+    box-shadow: 10px 20px 20px rgba(0,0,0,.5);
+    transform: translateY(-3px) scale(1.03);
+}
+.cloudIcon {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+    align-items: center;
+    border-radius: 50%;
+}
+.cloudIcon i{
+    font-size: 1.125rem;
+    color: var(--color-primary);
+}
+
+/* css for features3 */
+
+.features3{
+    background-color: var(--color-secondary);
+}

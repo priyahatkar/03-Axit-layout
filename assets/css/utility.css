@@ -30,3 +30,9 @@
 .short-border::after{
     background: var(--color-white);
 }
+
+.tri-heading{
+    color: var(--color-text-pri);
+    font-weight: 500;
+}
+
