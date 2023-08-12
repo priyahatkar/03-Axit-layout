@@ -64,7 +64,7 @@
 
 
 .heroImg {
-    height: auto;
+    height: calc(100vh - 57.7px);
     background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url('../images/img.png');
     background-position: center;
     background-size: cover;
@@ -127,13 +127,7 @@ transition: all .3s ease-in-out;
     color: var(--color-primary);
 }
 
-.secondary{
-    padding: 15px 30px;
-    background-color: var(--color-primary);
-    border: 0;
-    color: #fff;
-    font-size: 16px;
-}
+
 .trialForm.card{
     border: 0px !important;
     overflow: hidden;
@@ -174,6 +168,7 @@ input.form-control {
 .socialIcon i:focus,
 .socialIcon i:active{
     color: var(--color-primary);
+    transform: rotate(360deg) scale(1.1);
 }
 
 /* css for  features */
@@ -202,13 +197,13 @@ input.form-control {
     color: var(--color-dark);
 }
 
-
 /* css for  features2 */
 
 
 .featureImg{
     box-shadow: 5px 10px 10px rgba(0,0,0,.3);
     transition: all .4s ease-in-out;
+    max-width: 100%;
 }
 .featureImg:hover,
 .featureImg:focus,
@@ -360,3 +355,86 @@ input.form-control {
     color: var(--color-white);
     font-size: 1rem;
 }
+
+/* css of contact us section  */
+
+.massage-group{
+    height: calc(100% - 1rem);
+}
+
+.massage-group textarea{
+    height: 100%;
+}
+
+#contactForm .form-control{
+    border: 0;
+    border-radius: unset;
+    border-bottom: 2px solid var(--color-borders);
+    outline: none;
+    box-shadow: none;
+}
+#contactForm .form-group{
+    position: relative;
+}
+#contactForm .form-control:placeholder-shown ~ label {
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+#contactForm .form-control ~ small{
+    display: none;
+}
+#contactForm .form-control ~ label {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    opacity: 1;
+}
+
+#contactForm .form-control:focus:invalid{
+    border-bottom: 2px solid orangered;
+}
+
+#contactForm .form-control:focus{
+    border-bottom: 2px solid yellowgreen;
+}
+
+
+
+#contactForm .form-control:focus:invalid ~ small{
+    display: block;
+}
+/* footer css */
+
+.footer{
+    padding: 25px 0 15px;
+    background-color: var(--color-dark);
+}
+.socialIcon a{
+    display: inline-block;
+}
+.footer .socialIcon i{
+    margin-right: 32px;
+    font-size: 25px;
+}
+
+.footer .info{
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: lighter;
+}
+.footer ul{
+    list-style: none;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    margin-right: 5px;
+}
+
+
+

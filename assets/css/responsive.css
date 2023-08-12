@@ -3,3 +3,22 @@
         margin-right: 15px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .heroImg{
+        height: auto;
+    }
+    .section{
+        padding: 4.5rem 0;
+    }
+    .featureTab li.nav-item{
+        flex: 1 0 auto;
+        border-radius: unset !important;
+    }
+    #myTabContent {
+        padding: 1.25rem 0 0 0 ;
+    }
+    .footer .socialIcon i{
+        margin-right: 1rem;
+    }
+}

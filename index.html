@@ -12,6 +12,7 @@
         <title>Axit Layout</title>
             <link rel="stylesheet" href="./assets/css/style.css">
             <link rel="stylesheet" href="./assets/css/utility.css">
+            <link rel="stylesheet" href="./assets/css/responsive.css">
 
 
     </head>
@@ -57,7 +58,7 @@
             <section class="heroImg section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-4 mb-md-0">
                             <div class="heroInfo">
                                 <img src="./assets/images/large-logo.png" class="mb-4" alt="logo" title="logo">
                                 <h1 class="mainHeading text-uppercase short-border">
@@ -151,8 +152,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7">
-                            <div class="featureTab d-flex">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <div class="featureTab d-flex flex-column flex-md-row mb-4 mb-md-0">
+                                <ul class="nav nav-tabs flex-md-column flex-row" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">TAB 1</button>
                                     </li>
@@ -225,7 +226,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 d-flex justify-content-start align-items-center">
-                            <img src="./assets/images/image_left.jpg" class="featureImg" alt="features2" title="features2">
+                            <img src="./assets/images/image_left.jpg" class="featureImg mb-4 mb-md-0" alt="features2" title="features2">
                         </div>
                         <div class="col-md-6">
                             <h3 class="socialHeading short-border-orange">
@@ -235,7 +236,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                             </p>
                             <div class="row">
-                                <div class="col-2 d-flex justify-content-center">
+                                <div class="col-2 pr-0 d-flex justify-content-center">
                                     <span class="cloudIcon">
                                         <i class="fa-solid fa-cloud-arrow-up"></i>
                                     </span>
@@ -247,7 +248,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-2 d-flex justify-content-center">
+                                <div class="col-2 pr-0 d-flex justify-content-center">
                                     <span class="cloudIcon">
                                         <i class="fa-solid fa-cloud-arrow-down"></i>
                                     </span>
@@ -539,7 +540,89 @@
                     </div>
                 </div>
             </section>
-            <section class="section"></section>
+            <section class="section contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="mainHeading border-center short-border-orange text-dark">
+                                CONTACT US
+                            </h2>
+                            <p class="socialPara mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <form id="contactForm">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" required id="name" placeholder="Name" class="form-control">
+                                    <small>Please Enter Valid UserName</small>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required id="email" placeholder="Email" class="form-control">
+                                    <small>Please Enter Valid Email</small>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required id="subject" placeholder="Subject" class="form-control">
+                                    <small>Please Enter Valid Subject</small>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group massage-group">
+                                    <textarea id="massage" required class="form-control" placeholder="Massage"></textarea>
+                                    <small>Please Enter Valid Massage</small>
+                                    <label for="massage" class="sr-only">massage</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="secondary text-capitalize">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="socialIcon text-center mb-3">
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-brands fa-stumbleupon"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="fa-solid fa-wifi fa-rotate-90"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <i class="fa-regular fa-copyright"></i>
+                    </li>
+                    <li>2015</li>
+                    <li>
+                    Axure Themes
+                    </li>
+                </ul>
+            </section>
         </main>
 
 

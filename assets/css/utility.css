@@ -9,6 +9,7 @@
     --color-white : #fff;
     --color-border : #b7b7b7;
     --color-bg : #333333;
+    --color-borders : #b6b6b6;
 }
 
 .short-border, .short-border-orange{
@@ -43,4 +44,13 @@
 
 .bg-gray{
     background-color: var(--color-secondary);
+}
+
+.secondary{
+    padding: 15px 30px;
+    background-color: var(--color-primary);
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
 }
