@@ -65,7 +65,7 @@
 
 .heroImg {
     height: auto;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url('../images/img.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url('../images/img.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -310,4 +310,53 @@ input.form-control {
 .pricing .card:active{
     box-shadow: 2px 10px 10px rgba(0,0,0,.3);
     transform: translateY(-7px);
+}
+
+/* feedback section css */
+.feedbackCard{
+    width: 90%;
+}
+.feedback blockquote{
+    background-color: var(--color-secondary);
+    padding: 25px 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: relative;
+    line-height: 1.25;
+    font-weight: lighter;
+}
+.feedback blockquote::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 20px;
+    background: var(--color-secondary);
+    bottom: -10px;
+    left: 25px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.feedback small{
+    font-size: 14px;
+    color: var(--color-text-sec);
+}
+
+.feedback .img-fluid:hover{
+    filter: blur(1px) grayscale(1);
+}
+
+/* design section for css  */
+
+.design{
+    /* height: ; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.design .socialPara{
+    color: var(--color-white);
+    font-size: 1rem;
 }
