@@ -236,7 +236,21 @@ input.form-control {
     height: 4.063rem;
     width: 4.063rem;
     line-height: 4.063rem;
+    transition: all .4s ease-in-out;
 }
+
+.cloudIcon i:active,
+.cloudIcon i:focus,
+.cloudIcon i:hover,
+.cloudIcon:active,
+.cloudIcon:focus,
+.cloudIcon:hover{
+    background-color: var(--color-primary);
+    transform: rotateX(180deg) scale(1.1);
+    color: var(--color-white);
+}
+
+
 .awesome .cloudIcon i{
     font-size: 1.563rem;
 }
@@ -418,6 +432,7 @@ input.form-control {
 .footer .socialIcon i{
     margin-right: 32px;
     font-size: 25px;
+    transition: all .3s ease-in-out;
 }
 
 .footer .info{
